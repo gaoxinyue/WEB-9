@@ -106,6 +106,8 @@ window.onload = function() {
 	jian.onclick = function(){
 		if(num.value > 1){
 			num.value = num.value - 1;
+			jian.style.cursor = "pointer";
+			jia.style.cursor = "pointer";
 		} else if(num.value == 1){
 			jian.style.cursor = "not-allowed";
 		} else{
@@ -116,6 +118,8 @@ window.onload = function() {
 	jia.onclick = function(){
 		if(num.value < 5){
 			num.value = parseInt(num.value) + 1;
+			jian.style.cursor = "pointer";
+			jia.style.cursor = "pointer";
 		} else if(num.value == 5){
 			jia.style.cursor = "not-allowed";
 		} else{
