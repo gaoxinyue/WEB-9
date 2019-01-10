@@ -16,11 +16,10 @@ a{
 	clear: both;
 }
 .winScro{
+	width: 100%;
 	height: 130px;
 	background-color: #fff;
-	z-index: 1;
-	/*top: 0;
-	left: 0;*/
+	z-index: 2;
 }
 .Top{
 	height: 30px;
@@ -146,6 +145,7 @@ a{
 	float: left;
 	width: 670px;
 	height: 80px;
+	background-color: #fff;
 }
 .search-bar-left input{
 	float: left;
@@ -155,6 +155,7 @@ a{
 	color: #74736d;
 	font-size: 16px;
 	margin-top: 15px;
+	outline: none;
 }
 .search-bar-right input{
 	float: left;
@@ -166,6 +167,8 @@ a{
 	font-size: 20px;
 	text-align: center;
 	margin-top: 15px;
+	outline: none;
+	cursor: pointer;
 }
 .phone-and-email{
 	float: left;
@@ -442,9 +445,7 @@ a{
 	background: #fe6c00;
 }
 
-
-
-/* ******* */
+/* 大轮播图开始 */
 .big-banner-bottom{
 	float: left;
 	width: 800px;
@@ -457,6 +458,8 @@ a{
 	width: 200px;
 	height: 189px;
 }
+/* 大轮播图结束 */
+
 .small-banner{
 	float: left;
 	width: 210px;
@@ -474,22 +477,8 @@ a{
 .small-banner-top img{
 	margin: 12px 5px 0 15px;
 }
-/* ********* */
-/*.small-banner-middle{
-	float: left;
-	width: 210px;
-	height: 320px;
-	overflow: hidden;
-}
-.small-banner-middle ul li{
-	width: 210px;
-	height: 28px-10px;
-	float: left;
-	color: #ff4d04;
-	font-size: 13px;
-	font-weight: bold;
-	padding-top: 10px;
-}*/
+
+/* 小轮播图开始 */
 .box2{
 	float: left;
 	width: 210px;
@@ -499,24 +488,21 @@ a{
 }
 .slider2{
 	width: 210px;
-	height: 672px;
-	/*(13+11)*28px*/
+	height: 700px;
+	/*(13+12)*28px*/
 	position: absolute;
-	/*top: 0;*/
 }
 .slide2{
 	height: 28px;
-	 /*28px-10px */
 	overflow: hidden;
 	float: left;
 	color: #ff4d04;
 	font-size: 13px;
 	line-height: 28px;
 	font-weight: bold;
-	/*padding-top: 10px;*/
-}
+ }
+/* 小轮播图结束 */
 
-/* ************ */
 .small-banner-bottom{
 	float: left;
 	width: 210px;
@@ -717,13 +703,13 @@ a{
 	right: -86px;
 	width: 130px;
 	height: 110px;
+	z-index: 3px;
 }
 .w1{
-
 }
 .w2{
 	width: 130px;
-	margin-top: -5px;
+	margin-top: -4px;
 	background-color: #fd9a6e;
 }
 .w3{
@@ -778,7 +764,8 @@ a{
 }
 .er2{
 	position: absolute;
-	top: 50px;
+	top: 45px;
+	left: 10px;
 }
 .w6{
 	width: 130px;

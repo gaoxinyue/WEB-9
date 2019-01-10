@@ -154,6 +154,7 @@ a{
 	color: #74736d;
 	font-size: 16px;
 	margin-top: 15px;
+	outline: none;
 }
 .search-bar-right input{
 	float: left;
@@ -165,6 +166,8 @@ a{
 	font-size: 20px;
 	text-align: center;
 	margin-top: 15px;
+	outline: none;
+	cursor: pointer;
 }
 .phone-and-email{
 	float: left;
@@ -344,93 +347,65 @@ a{
 	margin-right: 20px;
 }
 
-/*******/
-/*.box2{
-	float: left;
-	width: 400px;
-	height: 400px;
-	margin: 20px;
-	overflow: hidden;
-	position: relative;
-}
-.img{
-	width: 400px;
-	height: 400px;	
-	position: relative;	
-}*/
-
+/* 放大镜开始*/
 #box{
 	float: left;
-	width:440px;
-	height:455px;
+	width:450px;
+	height:420px;
 	position:relative;
-	/*border: 1px solid #676660;*/
-	/*display: none;*/
-	overflow: hidden;
 }
 
 #img1{
-	/*width: 400px;*/
-	width: 800px;
+	width: 400px;
 	height: 400px;
 	margin: 20px;
 	position:absolute;
 	left:0;
 	top:0;
-	border:1px sloid #676660;
 	display: block;
-	overflow: hidden;
-}
-.image1{
-	float: left;
-}
-.image11{
-	display: block;
-}
-.image12{
-	display: none;
 }
 
 #slider{
-width:100px;
-height:100px;
-position:absolute;
-left:0;
-top:0;
-background: #676660;
-opacity:0.8;
-cursor: move;
-display:none; 
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:0;
+	top:0;
+	background: #676660;
+	opacity:0.8;
+	cursor: move;
+	display:none; 
 }
 #img2{
 	position:absolute;
-	left: 700px;
-	top: 210px;
-	display:none; 
+	left: 420px;
+	top: 0;
 	width:400px;
 	height:400px;
-	margin: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	overflow:hidden;
 	border: 1px solid #676660;
-	display: none;
+	z-index: 2;
+	display:none; 
 }
 #Bimg{
 	position:absolute;
 	left:0;
 	top:0;
-	width: 1600px;
-	height: 1600px;
+	width: 1333px;
+	height: 1333px;
 }
+/* 放大镜结束 */
 
 
-
-/*********/
 .commodity-left-top-text{
 	float: left;
 	width: 550px;
 	height: 450px;
 	overflow: hidden;
 	/*display: none;*/
+	z-index: 1px;
 }
 .commodity-left-top-hanguo{
 	float: left;
@@ -482,6 +457,8 @@ display:none;
 	height: 80px;
 	overflow: hidden;
 }
+
+/* 净含量开始 */
 .commodity-left-top-jinghanliang{
 	float: left;
 	width:530px; /* 550px-20px */
@@ -508,11 +485,9 @@ display:none;
 .commodity-left-top-jinghanliang input:first-child{
 	margin-left: 20px;
 }
+/* 净含量结束 */
 
-
-
-
-
+/* 数量开始 */
 .commodity-left-top-shuliang{
 	float: left;
 	width:530px; /* 550px-20px */
@@ -544,10 +519,7 @@ display:none;
 	border: 1px solid #cecbc5;
 	background-color: #fff;
 }
-
-
-
-
+/* 数量结束 */
 
 .commodity-left-top-xiaoliang{
 	float: left;
@@ -753,7 +725,7 @@ display:none;
 	margin-top: -13px;
 }
 
-/*******/
+/* 蒙罩开始 */
 .Mengzhao{
 	width: 100%;
 	height: 100%;
@@ -804,3 +776,4 @@ display:none;
 	font-size: 18px;
 	line-height: 40px;
 }
+/* 蒙罩结束 */
